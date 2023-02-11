@@ -1,0 +1,65 @@
+ 
+ --------------------------about section not working-----------------------------
+ 
+ <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/unofficial photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatibus aut consectetur excepturi laboriosam, aspernatur placeat veritatis eveniet! Ullam vitae quo possimus laborum repellendus adipisci esse, nostrum est iure rem!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Lorem, ipsum dolor.</li>
+                            <li><span>Web Dev</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021</span><br>Lorem ipsum dolor sit amet.</li>
+                            <li><span>2019-2021</span><br>Lorem ipsum dolor sit amet.</li>
+                            <li><span>2019-2021</span><br>Lorem ipsum dolor sit amet.</li>
+                            <li><span>2019-2021</span><br>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025-2021</span><br>B.tech(IT) SRMCEM,Lucknow.</li>
+                            <li><span>2021</span><br>12TH(89%) Central Academy,Barabanki.</li>
+                            <li><span>2019</span><br>10TH(94%) Central Academy,Barabanki.</li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+
+----------------------------javascript about section----------------------------------------------
+
+  <script>
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classlist.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
