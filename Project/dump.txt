@@ -63,3 +63,33 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+
+    media query for phone 600 px
+
+        /* nav .fas{
+        display: block;
+        font-size: 25px;
+    } */
+
+    /* nav ul{
+        background: #FFED00;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 40px;
+    } */
+
+    /* nav ul li{
+        display: block;
+        margin: 25px;
+
+    } */
+
+    /* nav ul fas{
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        cursor: pointer;
+    } */

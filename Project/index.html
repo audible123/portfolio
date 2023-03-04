@@ -8,6 +8,7 @@
     <title>Aditya Singh</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
@@ -15,15 +16,14 @@
         <div class="container">
             <nav>
                 <img src="images/logo34.png" class="logo" alt="">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fas fa-solid fa-xmark"></i>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Hi!</p>
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/unofficial photo.jpg"  class="img-item">
+                    <img src="images/unofficial photo.jpg" class="img-item">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -56,7 +56,7 @@
                             <li><span>Content Writer</span><br>A newbie in content writing</li>
                             <li><span>SEO Expert</span><br>seo expert</li>
                         </ul>
-                        <a href="" class="btn btn2">Download CV</a>
+                        <a href="ADITYA SINGH CV (1).pdf" class="btn btn2">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                     <a href="#">Learn More</a>
                 </div>
                 <div>
-                    <h2>Blogs</h2>
+                    <h2>Blog</h2>
                     <p>I used to write about the things which i learned.</p>
                     <a href="#">Learn More</a>
                 </div>
@@ -121,14 +121,48 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="portfolio.html" class="btn">See More</a>
         </div>
     </div>
 
+    <!-- ----------------------------------------the social media---------------------------------- -->
+    <div id="social">
+        <ul id="ul">
+            <li class="iconssocial">
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="iconssocial">
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="iconssocial">
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li class="iconssocial">
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <script>
-
+        sidemeu = document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemeu.style.right='0';
+        }
+        
+        function closemenu(){
+            sidemeu.style.right='-255px';
+        }
     </script>
-
+    
 </body>
 
 </html>
