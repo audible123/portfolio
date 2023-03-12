@@ -56,7 +56,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #6e2626;
+    background: #028957;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -79,7 +79,7 @@ nav ul li a:hover::after {
 
 
 .header-text span {
-    color: #6e2626;
+    color: #028957;
 }
 
 /*________________________about me________________________*/
@@ -132,7 +132,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #6e2626;
+    background: #028957;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -150,7 +150,7 @@ nav ul li a:hover::after {
 
 
 .tab-contents ul li span {
-    color: #6e2626;
+    color: #028957;
     font-size: 14px;
 }
 
@@ -172,7 +172,7 @@ nav ul li a:hover::after {
 .services-list div {
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -185,7 +185,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -199,7 +199,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background-color: #6e2626;
+    background-color: #028957;
     transform: translateY(-10px);
 }
 
@@ -230,7 +230,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #6e2626);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #028957);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -250,7 +250,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #6e2626;
+    border: 1px solid #028957;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -259,7 +259,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #6e2626;
+    background: #028957;
 }
 
 .layer h3 {
@@ -269,7 +269,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #6e2626;
+    color: #028957;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -291,7 +291,7 @@ nav ul li a:hover::after {
 
 .btn2 {
     display: inline-block;
-    /* background-color: #6e2626; */
+    /* background-color: #028957; */
 }
 
 .sticky {
@@ -339,7 +339,7 @@ nav .fas {
     }
 
     nav ul {
-        background: #6e2626;
+        background: #028957;
         position: fixed;
         top: 0;
         right: -200px;
